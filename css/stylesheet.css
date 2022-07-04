@@ -1,0 +1,223 @@
+/*   FONT USED:
+font-family: 'Inconsolata', monospace;   -P-
+font-family: 'Permanent Marker', cursive; -NAV-
+font-family: 'Tapestry', cursive;  -H1/2 ect-
+*/
+
+/* GENERAL css*/
+
+body {
+    width:100%;
+    margin:0;
+    overflow-x: hidden;
+}
+/* HEADER section css*/
+
+#header {
+    width:100%;
+    height:55vw;
+    background:url(/images/netflix.png) no-repeat;
+    background-size:cover;
+    margin-bottom:0
+}
+
+.flexcontainer {
+    background-color: rgba(115, 187, 229, 0.818);
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header h1{
+    font-size: 3.5vw;
+    text-shadow: 2px 2px white;
+    width:100%;
+    margin:0;
+    padding-left:10px;
+    color: black;
+    font-family: 'Tapestry', cursive;
+}
+
+#header a {
+    text-decoration:none;
+    color:black;
+    padding-right:2vw;
+    text-shadow: 1px 1px white;
+    font-size:1.5vw;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#header a:hover {
+    transform:scale(1.1)
+}
+
+#header p {
+    position: absolute;
+    bottom: 0;
+}
+
+/*LIFE section css*/
+
+#life {
+    background-color: rgba(115, 187, 229, 0.6);
+    margin:0;
+    text-align:center;
+}
+
+#life h2 {
+    margin:0;
+    padding:1vw 12vw;
+    font-family: 'Tapestry', cursive;
+    text-shadow: 1px 1px white;
+}
+
+#life p {
+    padding:1vw 12vw 3vw 12vw;
+    font-family: monospace;
+    margin:0;
+}
+
+/* INTERVIEWS section css*/
+
+#videos {
+    margin:4vw;
+}
+
+.video1 {
+    grid-area: video;
+}
+.video1 iframe {
+    width:100%;
+    height:100%;
+}
+
+.video2 {
+    grid-area: video2;
+}
+
+.video2 iframe {
+    width:100%;
+    height:100%;
+}
+
+.video3 {
+    grid-area: video3;
+}
+
+.video3 iframe {
+    width:100%;
+    height:100%;
+}
+
+.video4 {
+    grid-area: video4;
+}
+
+.video4 iframe {
+    width:100%;
+    height:100%;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+     'video video2'
+     'video3 video4';
+     gap:2vw 8vw;
+     margin:3vw;
+}
+
+/* FAME section css*/
+
+#fame {
+    background-color: rgba(115, 187, 229, 0.2);
+    margin:0;
+    text-align:center;
+}
+
+#fame h2 {
+    padding:1vw 12vw;
+    font-family: 'Tapestry', cursive;
+    text-shadow: 1px 1px white;
+    margin:0;
+}
+
+#fame p {
+    padding:1vw 12vw 3vw 12vw;
+    font-family: monospace;
+    margin:0;
+}
+
+/* LINKS section css*/
+
+
+
+
+
+#links h4{
+    width:100%;
+    padding-left: 3vw;;
+}
+
+#links ul li  {
+    list-style-type: none;
+
+}
+
+#links ul a {
+    width: 100%;
+    color: black;
+    font-family: 'Tapestry', cursive;
+}
+
+/* FOOTER section css*/
+
+footer{
+    background-color: rgba(115, 187, 229, 0.818);
+    margin: 0;
+}
+footer h3 {
+    margin:0;
+    width: 100%;
+    padding: 0.5vw 0 0 0;
+    text-align:center;
+    color:black;
+    padding-right:2vw;
+    text-shadow: 1px 1px white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+footer p {
+    margin:0;
+    padding:0 0 5px 0;
+    font-size: 2vw;
+    font-family: 'Inconsolata', monospace; 
+    text-align: center;
+}
+
+
+@media (max-width:1024px){
+    
+}
+
+@media (max-width:896px){
+    
+    #fame p {
+        padding:1vw 12vw 3vw 12vw;
+        font-family:monospace;
+       
+    }
+}
+
+/* MEDIA QUERIES*/
+
+@media(max-width:844px){
+    #fame p {
+        padding:1vw 5vw 3vw 5vw;
+        font-family: monospace;
+        
+    }
+}
