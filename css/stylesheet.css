@@ -9,16 +9,16 @@ font-family: 'Tapestry', cursive;  -H1/2 ect-
 body {
     width:100%;
     margin:0;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 /* HEADER section css*/
 
 #header {
     width:100%;
-    height:55vw;
-    background:url(/images/netflix.png) no-repeat;
-    background-size:cover;
-    margin-bottom:0
+   
+}
+img{
+    width:100%;
 }
 
 .flexcontainer {
@@ -29,7 +29,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
 }
+
+.links{
+    display:flex;
+    
+}
+
 #header h1{
     font-size: 46px;
     text-shadow: 2px 2px white;
@@ -58,6 +65,22 @@ body {
 #header p {
     position: absolute;
     bottom: 0;
+}
+
+.hamburger{
+    display:none;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+.bar {
+    display:block;
+    width:25px;
+    height:3px;
+    margin: 5px 30px;
+    background-color:white;
 }
 
 /*LIFE section css*/
@@ -181,6 +204,7 @@ body {
 footer{
     background-color: rgba(115, 187, 229, 0.818);
     margin: 0;
+    padding:20px 0;
 }
 footer h3 {
     margin:0;
@@ -201,26 +225,85 @@ footer p {
     text-align: center;
 }
 
+/* MEDIA QUERY */
+@media (max-width:941px){
 
-@media (max-width:1024px){
-    
-}
-
-@media (max-width:896px){
-    
-    #fame p {
-        padding:1vw 12vw 3vw 12vw;
-        font-family:monospace;
-       
+    #header {
+        width:100%;
     }
-}
 
-/* MEDIA QUERIES*/
+    .flexcontainer {
+        background-color: rgb(115, 187, 229);
+        width:100%;
+        padding:30px 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position:fixed;
+    }
 
-@media(max-width:844px){
-    #fame p {
-        padding:1vw 5vw 3vw 5vw;
-        font-family: monospace;
-        
+    #header h1{
+        font-size: 22px;
+        text-shadow: 2px 2px white;
+        width:100%;
+        margin:0;
+        padding:0 0 0 10px;
+        color: black;
+        font-family: 'Tapestry', cursive;
+    }
+
+    #header a {
+        text-decoration:none;
+        color:black;
+        padding-right:2vw;
+        text-shadow: 1px 1px white;
+        font-size:16px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .links{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display:block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .links{
+        position:fixed;
+        left:-150%;
+        top:60px;
+        gap:0;
+        flex-direction: row;
+        justify-content: center;
+        background-color:  rgb(115, 187, 229);
+        width:100%;
+        text-align: center;
+        padding: 0 ;
+        transition: 0.3s;
+    }
+
+    .links.active {
+        left:0;
+    }
+
+    img{
+        margin-top:60px;
     }
 }
