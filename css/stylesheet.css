@@ -15,7 +15,7 @@ body {
 
 #header {
     width:100%;
-   
+    position:fixed;
 }
 img{
     width:100%;
@@ -23,13 +23,11 @@ img{
 
 .flexcontainer {
     background-color: rgba(115, 187, 229, 0.818);
-    width:100%;
     padding:15px 0px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position:fixed;
 }
 
 .links{
@@ -50,7 +48,7 @@ img{
 #header a {
     text-decoration:none;
     color:black;
-    padding-right:2vw;
+    padding-right:40px;
     text-shadow: 1px 1px white;
     font-size:20px;
     font-family: 'Permanent Marker', cursive;
@@ -181,11 +179,13 @@ img{
 
 
 
-
+#links{
+    padding-left: 100px;
+}
 
 #links h4{
     width:100%;
-    padding-left: 3vw;;
+    
 }
 
 #links ul li  {
@@ -228,6 +228,7 @@ footer p {
 /* MEDIA QUERY */
 @media (max-width:941px){
 
+
     #header {
         width:100%;
     }
@@ -244,9 +245,8 @@ footer p {
     }
 
     #header h1{
-        font-size: 22px;
+        font-size: 26px;
         text-shadow: 2px 2px white;
-        width:100%;
         margin:0;
         padding:0 0 0 10px;
         color: black;
@@ -256,10 +256,10 @@ footer p {
     #header a {
         text-decoration:none;
         color:black;
-        padding-right:2vw;
         text-shadow: 1px 1px white;
-        font-size:16px;
+        font-size:20px;
         font-family: 'Permanent Marker', cursive;
+        padding:30px auto;
     }
 
     .links{
@@ -301,9 +301,10 @@ footer p {
 
     .links.active {
         left:0;
+        padding:20px 0;
     }
 
     img{
-        margin-top:60px;
+        margin-top:90px;
     }
 }
