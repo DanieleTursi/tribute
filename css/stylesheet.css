@@ -180,21 +180,21 @@ img{
 
 
 
-#links{
+#linkref{
     padding-left: 100px;
 }
 
-#links h4{
+#linkref h4{
     width:100%;
     font-size: 20px;
 }
 
-#links ul li  {
+#linkref ul li  {
     list-style-type: none;
 
 }
 
-#links ul a {
+#linkref ul a {
     width: 100%;
     color: black;
     font-family: 'Tapestry', cursive;
@@ -223,13 +223,17 @@ footer h3 {
 footer p {
     margin:0;
     padding:0 0 5px 0;
-    font-size: 2vw;
+    font-size: 16px;
     font-family: 'Inconsolata', monospace; 
     text-align: center;
 }
 
 /* MEDIA QUERY */
 @media (max-width:941px){
+
+    #overflow {
+        overflow-x: hidden;
+    }
 
     .flexcontainer {
         background-color: rgb(115, 187, 229);
@@ -318,5 +322,9 @@ footer p {
 
     img{
         margin-top:90px;
+    }
+
+    #linkref{
+        padding-left: 70px;
     }
 }
