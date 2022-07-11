@@ -49,7 +49,6 @@ img{
     text-decoration:none;
     color:black;
     padding-right:30px;
-    text-shadow: 1px 1px white;
     font-size:20px;
     font-family: 'Permanent Marker', cursive;
 }
@@ -57,7 +56,6 @@ img{
 #header a:hover {
     transform:scale(1.1);
     color:white;
-    text-shadow: 1px 1px black;
 }
 
 #header p {
@@ -86,21 +84,22 @@ img{
 #life {
     background-color: rgba(115, 187, 229, 0.6);
     margin:0;
+}
+
+h2 {
+    margin:30px 0;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 1px 1px white;
+    font-size: 30px;
     text-align:center;
 }
 
-#life h2 {
-    margin:0;
-    padding:1vw 12vw;
-    font-family: 'Tapestry', cursive;
-    text-shadow: 1px 1px white;
-}
-
-#life p {
+p {
     padding:1vw 12vw 3vw 12vw;
     font-family: monospace;
     font-size: 18px;
-    margin:0;
+    margin:0 0 30px 0;
+    text-align:justify;
 }
 
 /* INTERVIEWS section css*/
@@ -151,7 +150,7 @@ img{
     grid-template-areas: 
      'video video2'
      'video3 video4';
-     gap:2vw 8vw;
+    gap:2vw 8vw;
     justify-content: center;
 }
 
@@ -160,39 +159,22 @@ img{
 #fame {
     background-color: rgba(115, 187, 229, 0.2);
     margin:0;
-    text-align:center;
 }
 
-#fame h2 {
-    padding:1vw 12vw;
-    font-family: 'Tapestry', cursive;
-    text-shadow: 1px 1px white;
-    margin:0;
-}
-
-#fame p {
-    padding:1vw 12vw 3vw 12vw;
-    font-family: monospace;
-    margin:0;
-    font-size: 18px;
-}
 
 /* LINKS section css*/
 
 
 
-#linkref{
-    padding-left: 100px;
-}
-
 #linkref h4{
     width:100%;
     font-size: 20px;
+    padding:2vw 12vw 0 12vw;
+    margin-top: 0;
 }
 
 #linkref ul li  {
     list-style-type: none;
-
 }
 
 #linkref ul a {
@@ -200,17 +182,21 @@ img{
     color: black;
     font-family: 'Tapestry', cursive;
     font-size: 18px;
+    text-align:justify;
+    padding:1vw 12vw 3vw 12vw;
 }
 
 /* FOOTER section css*/
 
 footer{
     background-color: rgba(115, 187, 229, 0.818);
-    margin: 0;
+    margin-top: 50px;
     padding:30px 0;
     width:100%;
 }
 footer h3 {
+
+    font-size:30px;
     margin:0;
     width: 100%;
     padding: 0.5vw 0 0 0;
@@ -293,14 +279,7 @@ footer p {
         justify-content: center;
     }
 
-    #life p {
-        font-size: 16px;
-    }
-
-    #fame p {
-        font-size: 16px;
-    }
-
+  
 
     .links{
         position:fixed;
@@ -324,8 +303,11 @@ footer p {
     img{
         margin-top:90px;
     }
-
-    #linkref{
-        padding-left: 70px;
+    
+    footer h3{
+        font-size:22px;
+    }
+    #linkref ul a {
+        padding:1vw 12vw 3vw 8vw;
     }
 }
