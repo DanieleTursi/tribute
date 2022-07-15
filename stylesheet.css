@@ -180,13 +180,13 @@ p {
     list-style-type: none;
 }
 
-#linkref ul a {
+#linkref ul li a {
     width: 100%;
     color: black;
     font-family: 'Tapestry', cursive;
     font-size: 18px;
     text-align:justify;
-    padding:1vw 12vw 3vw 12vw;
+    padding:10vw 12vw 10vw 12vw;
 }
 
 /* FOOTER section css*/
