@@ -218,7 +218,7 @@ footer p {
 }
 
 /* MEDIA QUERY */
-@media (max-width:925px){
+@media (max-width:941px){
 
     #overflow {
         overflow-x: hidden;
