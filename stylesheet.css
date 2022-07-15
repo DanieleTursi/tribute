@@ -167,26 +167,25 @@ p {
 
 /* LINKS section css*/
 
-
+#linkref{
+    display:flex;
+    flex-direction: column;
+}
 
 #linkref h4{
     width:100%;
     font-size: 20px;
-    padding:2vw 12vw 0 12vw;
+    padding:1vw 12vw 0 12vw;
     margin-top: 20px;
 }
 
-#linkref ul li  {
-    list-style-type: none;
-}
-
-#linkref ul li a {
+#linkref a {
     width: 100%;
     color: black;
     font-family: 'Tapestry', cursive;
     font-size: 18px;
     text-align:justify;
-    padding:10vw 12vw 10vw 12vw;
+    padding:0 12vw 1vw 12vw;
 }
 
 /* FOOTER section css*/
@@ -306,7 +305,7 @@ footer p {
     footer h3{
         font-size:22px;
     }
-    #linkref ul a {
-        padding:1vw 12vw 3vw 8vw;
+    #linkref a {
+        padding-right:12vw;
     }
 }
