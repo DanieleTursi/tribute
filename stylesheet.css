@@ -47,7 +47,11 @@ img{
     font-family: 'Tapestry', cursive;
 }
 
-#header a {
+#header a{
+    text-decoration:none;
+}
+
+.links a {
     text-decoration:none;
     color:black;
     padding-right:30px;
@@ -55,7 +59,7 @@ img{
     font-family: 'Permanent Marker', cursive;
 }
 
-#header a:hover {
+.links a:hover {
     transform:scale(1.1);
     color:white;
 }
@@ -219,6 +223,10 @@ footer p {
 
 /* MEDIA QUERY */
 @media (max-width:941px){
+
+    body{
+        width:100%;
+    }
 
     #overflow {
         overflow-x: hidden;

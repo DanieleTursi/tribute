@@ -10,3 +10,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",(
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }))
+
+window.addEventListener("hashchange", function () {
+  window.scrollTo(window.scrollX, window.scrollY - 150);
+});
